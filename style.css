@@ -22,7 +22,6 @@ body {
 .hero {
   height: 100vh;
   width: 100%;
-  z-index: 9999;
 }
 .navbar {
   display: flex;
@@ -168,7 +167,12 @@ body {
     left: 50px;
     background-color: var(--light-blue);
     z-index: 9;
- 
+   img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+   }
   }
 }
 .trusted-bookkeeping {
