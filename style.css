@@ -16,12 +16,10 @@ body {
   font-family: var(--font-main);
   margin: 0;
   padding: 0;
-  background-color: var(--light-bg);
   color: var(--text-color);
 }
 
 .hero {
-  border: 1px solid black;
   height: 100vh;
   width: 100%;
   z-index: 9999;
@@ -95,7 +93,7 @@ body {
 .hero-container{
   height: 90%;
   width: 100%;
-  padding: 40px 110px;
+  padding: 40px 110px 0px 110px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,28 +147,31 @@ body {
     }
   }
   .right-hero{
-    border: 1px solid green;
+
     height: 100%;
     width:40%;
+    position: relative;
     img{
       height: 100%;
+      width: 370px;
       background-size: cover;
       background-position: center;
-      position: relative;
-    }
-    .right-hero-img-bg{
-      height: 100%;
-      width: 350px;
+      z-index: 9;
       position: absolute;
-      top: 20px;
-      left: 20px;
-      color: var(--light-blue);
-      z-index: 999;
     }
+  }
+  .right-hero-img-bg{
+    height: 100%;
+    width: 370px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: var(--light-blue);
+    z-index: 9;
+ 
   }
 }
 .trusted-bookkeeping {
-  border: 1px solid red;
   height: 80vh;
   width: 100%;
   background-color: var(--primary-color);
