@@ -932,39 +932,47 @@ form button:hover {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     width: 750px;
-    .nav-link{
+    .nav-link {
       display: none;
     }
   }
 
-  .trusted-bookkeeping{
-.left-bookkeeping{
-  width: 750px;
-}
-
+  .trusted-bookkeeping {
+    .left-bookkeeping {
+      width: 750px;
+    }
   }
-.comprehensive-services{
-  .comprehensive-container{
-    .upper-services{
-.header-services{
-  margin-top: 30px;
-}
-    }
-    width: 750px;
-    h1{
-      font-size: 26px;
-    }
-    p{
-      font-size: 10px;
-    }
-    .cards-container{
-      flex-wrap: wrap;
-      h3{
-        font-size: 13px;
+  .comprehensive-services {
+    .comprehensive-container {
+      .upper-services {
+        .header-services {
+          margin-top: 30px;
+        }
+      }
+      width: 750px;
+      h1 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 10px;
+      }
+      .cards-container {
+        flex-wrap: wrap;
+        h3 {
+          font-size: 13px;
+        }
       }
     }
   }
-}
+
+ .contact-form{
+   .contact-form-container{
+    width: 400px;
+    .form-container{
+      width: 300px !important;
+    }
+  }
+ }
   .hero {
     .hero-container {
       width: 750px;
@@ -977,17 +985,15 @@ form button:hover {
         width: 450px;
         img {
           width: 350px;
-
-          
         }
-        .right-hero-img-bg{
+        .right-hero-img-bg {
+          width: 350px;
+          top: 30px;
+          left: 30px;
+          img {
             width: 350px;
-            top: 30px;
-            left: 30px;
-            img {
-              width: 350px;
-            }
           }
+        }
       }
     }
   }
