@@ -661,7 +661,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    .ex{
+    .ex {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -681,7 +681,6 @@ body {
     }
   }
 }
-
 
 /* CONTACT US SECTION STARTS HERE */
 .contact-section {
@@ -925,6 +924,124 @@ form button:hover {
           }
         }
       }
+    }
+  }
+}
+
+/* TABLET SCREEN RESPONSIVE SECTION */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    width: 750px;
+    .nav-link{
+      display: none;
+    }
+  }
+
+  .trusted-bookkeeping{
+.left-bookkeeping{
+  width: 750px;
+}
+
+  }
+.comprehensive-services{
+  .comprehensive-container{
+    .upper-services{
+.header-services{
+  margin-top: 30px;
+}
+    }
+    width: 750px;
+    h1{
+      font-size: 26px;
+    }
+    p{
+      font-size: 10px;
+    }
+    .cards-container{
+      flex-wrap: wrap;
+      h3{
+        font-size: 13px;
+      }
+    }
+  }
+}
+  .hero {
+    .hero-container {
+      width: 750px;
+      .left-hero {
+        div {
+          padding-left: 30px;
+        }
+      }
+      .right-hero {
+        width: 450px;
+        img {
+          width: 350px;
+
+          
+        }
+        .right-hero-img-bg{
+            width: 350px;
+            top: 30px;
+            left: 30px;
+            img {
+              width: 350px;
+            }
+          }
+      }
+    }
+  }
+  .faq {
+    .faq-container {
+      width: 750px;
+      .header-faq {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .eye-on-books-inside {
+    width: 750px;
+  }
+  .professional-bookkeeping-container {
+    width: 750px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .upper-booking {
+      width: 750px;
+
+      .booking-inside {
+        h1 {
+          font-size: 27px;
+        }
+      }
+    }
+    .big-cards-container {
+      flex-wrap: wrap;
+      height: auto;
+      width: 750px;
+      align-items: center;
+      justify-content: center;
+
+      .big-card-blue,
+      .big-card-light-blue,
+      .big-card-orange {
+        width: 300px;
+        margin: 10px;
+      }
+    }
+  }
+  .recognized-excellence {
+    .reviews-container {
+      width: 750px;
+    }
+  }
+  .trusted-partner {
+    .image-container-partner {
+      width: 750px;
+      flex-wrap: wrap;
     }
   }
 }
