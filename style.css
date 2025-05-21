@@ -11,6 +11,9 @@
 * {
   box-sizing: border-box;
 }
+span {
+  color: var(--accent-color);
+}
 
 body {
   font-family: var(--font-main);
@@ -19,16 +22,15 @@ body {
   color: var(--text-color);
 }
 
-.hero {
-  height: 100vh;
-  width: 100%;
-}
+
+
+/* NAVBAR STARTS HERE*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 10px 100px;
+  width: 1100px;
   margin-top: 40px;
 }
 
@@ -38,7 +40,7 @@ body {
 
 .navigation {
   display: flex;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
 .nav-link {
@@ -46,6 +48,7 @@ body {
   color: var(--dark-bg);
   font-weight: 500;
   transition: color 0.3s ease;
+  font-family: var(--font-main);
 }
 
 .nav-link:hover {
@@ -89,45 +92,54 @@ body {
 .btn-consult:hover {
   background-color: #d85c3f;
 }
-.hero-container{
+/* HERO SECTION STARTS HERE*/
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  margin-top: 15px;
   height: 90%;
   width: 100%;
-  padding: 40px 110px 0px 110px;
   display: flex;
+  max-width: 1100px;
   flex-direction: row;
   justify-content: space-between;
 
-  .left-hero{
+  .left-hero {
     height: 100%;
-    width:45%;
+
     display: flex;
     flex-direction: column;
-    z-index: 99;
 
-    p{
+    p {
       font-size: 11px;
       font-weight: 600;
       color: var(--dark-bg);
+      padding-left: 30px;
     }
-    h3{
+    h1 {
       border-left: 3px solid var(--accent-color);
       padding-left: 25px;
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 600;
       color: var(--dark-bg);
     }
-    span{
-      color: var(--accent-color);
-    }
-    div{
+
+    div {
+  
+      padding-left: 100px;
       display: flex;
       flex-direction: column;
-      p{
+      p {
         font-weight: 400;
         color: black;
         align-self: flex-end;
       }
-      button{
+      button {
         padding: 9px 20px;
         width: 170px;
         margin-left: 120px;
@@ -145,21 +157,19 @@ body {
       }
     }
   }
-  .right-hero{
-
-    height: 100%;
-    width:40%;
+  .right-hero {
+    height: 450px;
+    width: 400px;
     position: relative;
-    img{
+    img {
       height: 100%;
-      width: 370px;
       background-size: cover;
       background-position: center;
       z-index: 9;
       position: absolute;
     }
   }
-  .right-hero-img-bg{
+  .right-hero-img-bg {
     height: 100%;
     width: 370px;
     position: absolute;
@@ -167,14 +177,16 @@ body {
     left: 50px;
     background-color: var(--light-blue);
     z-index: 9;
-   img{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-   }
+    img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
+
+/* WHO WE ARE SECTION STARTS HERE */
 .trusted-bookkeeping {
   height: 80vh;
   width: 100%;
@@ -198,9 +210,6 @@ body {
       color: var(--light-blue);
       font-size: 12px;
       font-weight: 500;
-    }
-    span {
-      color: var(--accent-color);
     }
     .heading-keeping {
       border-left: 3px solid var(--accent-color);
@@ -257,15 +266,11 @@ body {
   flex-direction: column;
 
   h1 {
-    font-size: 40px;
     font-weight: 500;
     margin-top: 0px;
     color: var(--dark-bg);
   }
 
-  span {
-    color: var(--accent-color);
-  }
   .image-container-partner {
     margin-top: 20px;
     display: flex;
@@ -278,10 +283,9 @@ body {
   }
 }
 .comprehensive-services {
-  min-height: 100vh;
   width: 100%;
   background-color: var(--off-white);
-  padding: 30px 100px;
+  padding: 30px 110px;
   .upper-services {
     p {
       padding-left: 25px;
@@ -303,9 +307,6 @@ body {
       font-size: 30px;
       border-left: 3px solid var(--accent-color);
       padding-left: 15px;
-    }
-    span {
-      color: var(--accent-color);
     }
     p {
       align-self: flex-end;
@@ -351,7 +352,6 @@ body {
           height: 50px;
         }
         h3 {
-          font-size: 16px;
           font-weight: 500;
           border-left: 2px solid var(--accent-color);
           color: var(--dark-bg);
@@ -651,26 +651,26 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    #ex1{
+    #ex1 {
       height: 50px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       padding-left: 25px;
     }
-    #ex2{
+    #ex2 {
       height: 110px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
-    #ex3{
+    #ex3 {
       height: 30px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
     }
-    #ex4{
+    #ex4 {
       height: 100px;
       background-position: center;
       background-size: contain;
@@ -678,7 +678,6 @@ body {
     }
   }
 }
-
 
 .contact-section {
   background-color: var(--light-bg);
@@ -716,7 +715,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 
-  div{
+  div {
     width: 60%;
     margin-bottom: 20px;
   }
@@ -728,7 +727,6 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
   margin-left: 30px;
-  
 }
 
 .main-heading {
@@ -740,10 +738,10 @@ body {
 }
 
 .main-heading span {
-  color: var(--accent-color); 
+  color: var(--accent-color);
 }
 
-.form-container{
+.form-container {
   justify-self: flex-end;
   width: 80% !important;
 }
@@ -752,7 +750,6 @@ body {
   color: var(--light-bg);
   font-weight: 400;
   margin-bottom: 30px;
-
 }
 
 form input,
@@ -773,7 +770,7 @@ form textarea {
     font-weight: 400;
     font-size: 10px;
   }
-  option{
+  option {
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 10px;
@@ -781,7 +778,7 @@ form textarea {
 }
 form select {
   margin-bottom: 15px;
-  padding-right:  40px ; 
+  padding-right: 40px;
   border: 1px solid var(--light-blue);
   border-radius: 20px;
   font-size: 11px; /* Reduce font size */
@@ -797,10 +794,9 @@ form select {
   background-size: 16px;
 }
 
-
 form textarea {
   resize: none;
-  border-radius:9px;
+  border-radius: 9px;
 }
 
 form button {
@@ -820,25 +816,23 @@ form button:hover {
 }
 
 .faq {
-  min-height: 100vh;
-  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 120px;
-  
-  .faq-container{
+
+  .faq-container {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    .header-faq{
+    .header-faq {
       height: 110px;
       width: 100%;
 
-      p{
+      p {
         font-weight: 700;
         font-size: 10px;
         color: var(--dark-bg);
@@ -846,7 +840,7 @@ form button:hover {
         margin: 4px 0px;
       }
 
-      div{
+      div {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -854,7 +848,7 @@ form button:hover {
         align-items: flex-end;
         padding: 0px;
 
-        h3{
+        h3 {
           font-weight: 600;
           font-size: 32px;
           color: var(--dark-bg);
@@ -862,10 +856,10 @@ form button:hover {
           margin: 0px;
           padding-left: 25px;
         }
-        span{
+        span {
           color: var(--accent-color);
         }
-        h5{
+        h5 {
           font-weight: 700;
           font-size: 10px;
           color: var(--dark-bg);
@@ -880,13 +874,13 @@ form button:hover {
       display: flex;
       flex-direction: column;
       gap: 5px;
-    
+
       .faq-item {
         background: var(--off-white);
         padding: 15px 20px;
         cursor: pointer;
         transition: background 0.3s ease;
-    
+
         .faq-question {
           display: flex;
           align-items: center;
@@ -895,13 +889,13 @@ form button:hover {
           font-weight: 600;
           color: var(--dark-bg);
         }
-    
+
         .icon {
           font-size: 30px;
           font-weight: 300;
           color: var(--dark-bg);
         }
-    
+
         .faq-answer {
           margin-top: 10px;
           font-size: 12px;
@@ -910,24 +904,23 @@ form button:hover {
           width: 95%;
           justify-self: flex-end;
         }
-    
+
         &:not(.active) .faq-answer {
           display: none;
         }
-    
+
         &.active {
           background: var(--off-white);
-    
+
           .faq-question {
             color: var(--accent-color);
           }
-    
+
           .icon {
             color: var(--accent-color);
           }
         }
       }
     }
-    
   }
 }
