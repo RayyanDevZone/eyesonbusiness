@@ -108,10 +108,9 @@ body {
   max-width: 1100px;
   flex-direction: row;
   justify-content: space-between;
-
+border: 1px solid red;
   .left-hero {
     height: 100%;
-
     display: flex;
     flex-direction: column;
 
@@ -188,21 +187,23 @@ body {
 
 /* WHO WE ARE SECTION STARTS HERE */
 .trusted-bookkeeping {
-  height: 80vh;
+  height: auto;
+  min-height: 450px;
+  height: auto;
   width: 100%;
   background-color: var(--primary-color);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
 
   .left-bookkeeping {
+    border: 1px solid white;
     position: absolute;
     left: 0%;
-    margin-left: 90px;
+    margin-left: 82px;
     height: 100%;
-    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +217,7 @@ body {
       padding-left: 20px;
       color: var(--light-bg);
       font-weight: 500;
-      font-size: 24px;
+      font-size: 2rem;
     }
     .para-keeping {
       margin-top: 20px;
@@ -245,34 +246,39 @@ body {
       font-weight: 600;
     }
   }
-  .left-image-logo {
+  .right-image-logo {
     position: absolute;
     right: 0%;
-    height: 50%;
+    bottom: 10%;
+    height: 200px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    border: 1px solid white;
   }
-  .left-image-logo img {
+  .right-image-logo img {
     height: 100%;
   }
 }
 .trusted-partner {
-  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid red;
 
   h1 {
     font-weight: 500;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     color: var(--dark-bg);
+    font-size: 2.5rem;
   }
 
   .image-container-partner {
-    margin-top: 20px;
+    border: 1px solid red;
+    width: 1100px;
+    margin: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
